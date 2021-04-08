@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+html,body,div,a{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "poppins", sans-serif;
+}
+
+body{
+  background-color: #0c1828;
+  overflow: hidden;
+}
+
+.container{
+  background-color: #0c1828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  height: 100vh;
+}
+
+.nav{
+  width: 100%;
+  position: relative;
+  margin: 10em auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav a{
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1em 0 2em;
+  width: 20%;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s;
+}
+
+.nav a:hover{
+  color: #e7da1f;
+}
+
+.fade{
+  position: absolute;
+  left: -12.5%;
+  transition: 0.7s ease-in-out;
+}
+
+.round-nav:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e7da1f;
+  bottom: 20px;
+}
+
+.round-nav a:after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: 16px;
+  left: 50%;
+  background-color: #e7da1f;
+  margin-left: -2px;
+  border-radius: 100%;
+}
+
+.round-nav .fade{
+  width: 10px;
+  height: 10px;
+  background-color: #e7da1f;
+  bottom: 16px;
+  margin-left: -5px;
+  border-radius: 100%;
+}
+
+.nav a:nth-child(1):hover ~ .fade{
+  left:10.2%;
+}
+.nav a:nth-child(2):hover ~ .fade{
+  left:30.3%;
+}
+.nav a:nth-child(3):hover ~ .fade{
+  left:50.3%;
+}
+.nav a:nth-child(4):hover ~ .fade{
+  left:70.3%;
+}
+.nav a:nth-child(5):hover ~ .fade{
+  left:90.3%;
+}
